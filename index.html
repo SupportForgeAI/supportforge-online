@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SupportForge – Apex AI Customer Service Redefined</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      background: #0f0f1a;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      background: linear-gradient(to bottom, rgba(100, 65, 165, 0.95), rgba(60, 40, 120, 0.95));
+      padding: 1rem 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #c084fc, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      color: #e0d7ff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      min-height: 800px;
+      background: linear-gradient(rgba(30, 20, 60, 0.65), rgba(10, 5, 40, 0.75)),
+                  url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+      /* ↑↑↑ REPLACE THIS URL with your new hero image URL ↑↑↑ */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 0 5%;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      z-index: 10;
+    }
+
+    .hero h1 {
+      font-size: clamp(4rem, 9vw, 9rem);
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 0.95;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, #c084fc, #a78bfa, #7dd3fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 5px 25px rgba(0,0,0,0.6);
+    }
+
+    .hero p.tagline {
+      font-size: clamp(1.6rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: #e0d7ff;
+      margin-bottom: 3rem;
+      text-shadow: 0 3px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Bottom sub-nav (as requested – kept visible over hero) */
+    .sub-nav {
+      position: absolute;
+      bottom: 12%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 3rem;
+      z-index: 20;
+    }
+
+    .sub-nav a {
+      color: #d1c4ff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      background: rgba(80, 50, 140, 0.4);
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .sub-nav a:hover {
+      background: rgba(140, 90, 220, 0.7);
+      color: white;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(140, 90, 220, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 1.2rem;
+      }
+      .sub-nav {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        bottom: 8%;
+      }
+      .sub-nav a {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Top Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">SupportForge</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#demo">Demo</a>
+        <a href="#qa">Q&A</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SUPPORTFORGE</h1>
+      <p class="tagline">Apex AI Customer Service Redefined</p>
+    </div>
+
+    <!-- Interactive sub-headings overlaid on the hero image -->
+    <div class="sub-nav">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
+      <a href="#qa">Q&A</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </section>
+
+  <!-- Add more sections below as needed -->
+  <section style="height: 100vh; background: #111; display: flex; align-items: center; justify-content: center; color: #aaa;">
+    <h2 style="font-size: 4rem;">Your content goes here...</h2>
+  </section>
+
+</body>
+        </html>
